@@ -15,7 +15,7 @@ The Gallery project is a web application that helps users upload photos, organiz
 1. **Clone the Repository:**
 git clone https://github.com/umeshola/gallery.git
 2. **Navigate to Frontend Directory:**
-3. cd frontend
+   cd frontend
 4.  **Install Dependencies:**
    npm install
 5. **Run Frontend Server:**
@@ -47,8 +47,5 @@ Open your web browser and go to `http://localhost:3000` to access the Gallery pr
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or create a pull request on the GitHub repository.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code for your own purposes.
 
 
