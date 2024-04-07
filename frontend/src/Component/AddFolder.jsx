@@ -8,7 +8,7 @@ function AddFolder() {
 
     const handle = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/addfolder', {
+            const response = await axios.post('https://space-backend-two.vercel.app/addfolder', {
                 foldername: name,
                 wallpaper: link
             }, {
