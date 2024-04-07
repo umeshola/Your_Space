@@ -8,7 +8,7 @@ function Signup() {
     const handleSubmit = async () => {
         
         try {
-            const response = await axios.post('http://localhost:3000/signup', {
+            const response = await axios.post('https://space-backend-two.vercel.app/signup', {
                 name: name,
                 password: pass,
                 email: email
