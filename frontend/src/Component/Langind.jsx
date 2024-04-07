@@ -22,7 +22,7 @@ function Landing() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/get_all_folder', {
+                const response = await axios.get('https://space-backend-two.vercel.app/get_all_folder', {
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token")
                     }
@@ -48,13 +48,13 @@ function Landing() {
 
     const handleDeleteFolder = async (folderId) => {
         try {
-            await axios.put('http://localhost:3000/deletefolder', { folderid: folderId }, {
+            await axios.put('https://space-backend-two.vercel.app/deletefolder', { folderid: folderId }, {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }
             });
             // Fetch folder data again after deletion
-            const response = await axios.get('http://localhost:3000/get_all_folder', {
+            const response = await axios.get('https://space-backend-two.vercel.app/get_all_folder', {
                 headers: {
                     Authorization: "Bearer " + localStorage.getItem("token")
                 }
