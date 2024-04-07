@@ -15,7 +15,7 @@ function Topbar() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/data', {
+                const response = await axios.get('https://space-backend-two.vercel.app/data', {
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token")
                     }
