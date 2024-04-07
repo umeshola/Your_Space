@@ -7,7 +7,7 @@ function AddFiles() {
 
     const handle = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/addfile', {
+            const response = await axios.post('https://space-backend-two.vercel.app/addfile', {
                 folderid: id,
                 image: link
             }, {
