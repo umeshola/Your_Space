@@ -15,7 +15,7 @@ function Folder() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/get_all_files/${id}`, {
+                const response = await axios.get(`https://space-backend-two.vercel.app/get_all_files/${id}`, {
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token"),
                     }
@@ -30,7 +30,7 @@ function Folder() {
         fetchData();
         const getname = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/get_folder_name/${id}`, {
+                const response = await axios.get(`https://space-backend-two.vercel.app/get_folder_name/${id}`, {
                     headers: {
                         Authorization: "Bearer " + localStorage.getItem("token")
                     }
@@ -61,7 +61,7 @@ function Folder() {
                 {selectedId && (
                     <motion.div className='top-1/3 left-1/3 flex absolute' layoutId={selectedId} >
                         <motion.button onClick={() =>{
-                                axios.put('http://localhost:3000/deleteimage',{
+                                axios.put('https://space-backend-two.vercel.app/deleteimage',{
                                     imageid:selectedId
                                 },{
                                     headers:{
